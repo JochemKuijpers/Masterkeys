@@ -28,10 +28,10 @@ uint32_t KeyboardCanvas::get(Shape<int> &shape) const {
     uint32_t n = 0;
     uint32_t color;
 
-    for (int y = std::min(0, shape.bound().y1);
-         y < std::max((int) height - 1, shape.bound().y2); ++y) {
-        for (int x = std::min(0, shape.bound().x1);
-             x < std::max((int) width - 1, shape.bound().x2); ++x) {
+    for (int y = std::max(0, shape.bound().y1);
+         y < std::min((int) height - 1, shape.bound().y2); ++y) {
+        for (int x = std::max(0, shape.bound().x1);
+             x < std::min((int) width - 1, shape.bound().x2); ++x) {
 //            if (!(x % 4 == 0 || x % 4 == 3) || !(y % 4 == 0 || y % 4 == 3)) continue;
             if (shape.in(x, y)) {
                 color = get(x, y);
@@ -59,10 +59,10 @@ void KeyboardCanvas::set(int x, int y, uint32_t color) {
 }
 
 void KeyboardCanvas::set(Shape<int> &shape, uint32_t color) {
-    for (int y = std::min(0, shape.bound().y1);
-         y < std::max((int) height - 1, shape.bound().y2); ++y) {
-        for (int x = std::min(0, shape.bound().x1);
-             x < std::max((int) width - 1, shape.bound().x2); ++x) {
+    for (int y = std::max(0, shape.bound().y1);
+         y < std::min((int) height - 1, shape.bound().y2); ++y) {
+        for (int x = std::max(0, shape.bound().x1);
+             x < std::min((int) width - 1, shape.bound().x2); ++x) {
             if (shape.in(x, y)) {
                 set(x, y, color);
             }
@@ -78,10 +78,10 @@ void KeyboardCanvas::add(int x, int y, uint32_t color) {
 }
 
 void KeyboardCanvas::add(Shape<int> &shape, uint32_t color) {
-    for (int y = std::min(0, shape.bound().y1);
-         y < std::max((int) height - 1, shape.bound().y2); ++y) {
-        for (int x = std::min(0, shape.bound().x1);
-             x < std::max((int) width - 1, shape.bound().x2); ++x) {
+    for (int y = std::max(0, shape.bound().y1);
+         y < std::min((int) height - 1, shape.bound().y2); ++y) {
+        for (int x = std::max(0, shape.bound().x1);
+             x < std::min((int) width - 1, shape.bound().x2); ++x) {
             if (shape.in(x, y)) {
                 add(x, y, color);
             }
