@@ -70,7 +70,7 @@ void MasterkeysSdk::start() {
     EnableLedControl(true, device);
     SetKeyCallBack(_msksdk::keyCallBack, device);
     EnableKeyInterrupt(true, device);
-    RefreshLed(true);
+
     std::cout << "Callback set for device " << device << "\n";
 }
 
