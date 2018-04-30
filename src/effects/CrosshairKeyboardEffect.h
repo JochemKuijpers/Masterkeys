@@ -10,6 +10,13 @@ class CrosshairKeyboardEffect : virtual public KeyboardEffect {
     float strenght;
     int ttl;
 
+    void drawCross(KeyboardCanvas *pCanvas, int x1, int y1, int x2, int y2, uint32_t color) {
+        Rect<int> line1(0, y1, 255, y2);
+        Rect<int> line2(x1 - 1, 0, x2 + 1, 255);
+        pCanvas->add(line1, color);
+        pCanvas->add(line2, color);
+    }
+
 public:
     CrosshairKeyboardEffect(float strenght, int ttl) : strenght(strenght), ttl(ttl) {}
 
@@ -27,12 +34,14 @@ public:
     }
 
     void onTick(KeyboardLayout *pLayout, KeyboardCanvas *pCanvas) override {
+        // currently pressed keys
         for (const auto &pKeyData : pressedKeys) {
             auto rect = pKeyData->getRect();
             drawCross(pCanvas, rect.x1, rect.y1, rect.x2, rect.y2,
                       color::blend(color::BLACK, color::WHITE, strenght));
         }
 
+        // released (fade out) keys
         auto it = releasedKeys.begin();
         while (it < releasedKeys.end()) {
             auto &pair = *it;
@@ -45,13 +54,6 @@ public:
             if (ticks >= ttl) it = releasedKeys.erase(it);
             else it++;
         }
-    }
-
-    void drawCross(KeyboardCanvas *pCanvas, int x1, int y1, int x2, int y2, uint32_t color) {
-        Rect<int> line1(0, y1, 255, y2);
-        Rect<int> line2(x1 - 1, 0, x2 + 1, 255);
-        pCanvas->add(line1, color);
-        pCanvas->add(line2, color);
     }
 };
 
