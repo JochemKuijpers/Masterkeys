@@ -27,11 +27,11 @@ void configureEffects(KeyboardManager &manager) {
     // which is sometimes inverted with regards to the scroll lock state
     manager.addEffect(new LockKeysKeyboardEffect());
 
-    // on key press/hold crosshair style (strength, fadeOutTime)
-    manager.addEffect(new CrosshairKeyboardEffect(0.33f, 3));
+    // on key press/hold crosshair effect (strength, fadeOutTime)
+    manager.addEffect(new CrosshairKeyboardEffect(0.75f, 10));
 
     // on key-press raindrop effect (strength, speed)
-    manager.addEffect(new RainDropsKeyboardEffect(0.33f, 2));
+    manager.addEffect(new RainDropsKeyboardEffect(0.75f, 2));
 }
 
 // code below does not need to be touched..
@@ -68,7 +68,7 @@ bool setup() {
     RECT desktop;
     auto hDesktop = GetDesktopWindow();
     GetWindowRect(hDesktop, &desktop);
-     SetWindowPos(window, nullptr, -8, desktop.bottom - 72, 280, 32, 0);
+    SetWindowPos(window, nullptr, -8, desktop.bottom - 72, 280, 32, 0);
 
     // hide window from taskbar
     ITaskbarList *pTaskList = nullptr;
