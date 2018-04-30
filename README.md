@@ -19,4 +19,4 @@ In Visual Studio, `Open Folder...` and select the root of the repository, where 
 
 Select build target `x64 Release`, and build.
 
-The binary can typically be found in `C:\Users\USER\CMakeBuilds\`. When moving the binaries, be sure to copy the `data` directory and the `SDKDLL.dll` file.
+The binary can typically be found in `C:\Users\USER\CMakeBuilds\`. When moving the software, be sure to copy the `data` directory and the `SDKDLL.dll` file.
