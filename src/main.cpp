@@ -23,7 +23,8 @@ void configureEffects(KeyboardManager &manager) {
     manager.addEffect(new SolidBackgroundKeyboardEffect(color::rgb(48, 48, 48)));
 
     // sets capslock, numlock and scroll lock lights enabled or disabled based on the lock state
-    // scroll lock can be inverted by double-pressing it
+    // scroll lock can be inverted by double-pressing it because I use it as a microphone mute indicator
+    // which is sometimes inverted with regards to the scroll lock state
     manager.addEffect(new LockKeysKeyboardEffect());
 
     // on key press/hold crosshair style (strength, fadeOutTime)
