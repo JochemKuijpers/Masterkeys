@@ -1,0 +1,28 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+
+// Row 0
+id PRINT_SCREEN 15 0
+id SCROLL_LOCK 16 0
+id PAUSE 17 0
+
+// Row 1
+id INSERT 15 1
+id HOME 16 1
+id PAGE_UP 17 1
+
+// Row 2
+id DELETE 15 2
+id END 16 2
+id PAGE_DOWN 17 2
+
+// Row 3
+// N/A
+
+// Row 4
+id UP_ARROW 16 4
+
+// Row 5
+id LEFT_ARROW 15 5
+id DOWN_ARROW 16 5
+id RIGHT_ARROW 17 5

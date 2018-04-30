@@ -1,0 +1,34 @@
+The layout file specifies the key layout of a keyboard.
+
+Every line is interpreted separately and starts by a command token, followed by
+its parameters.
+
+ Command                               | Notes
+---------------------------------------+---------------------------------------
+ size <width> <height>                 | Specifies the size of the keyboard
+                                       | canvas. Should come before any key
+                                       | commands.
+---------------------------------------+---------------------------------------
+ import <filename> <xoffset> <yoffset> | Loads another layout into this
+                                       | keyboard mapping, with a specified
+                                       | offset applied to the imported layout.
+                                       | <xoffset>, <yoffset> are optional.
+---------------------------------------+---------------------------------------
+ key <name> <x> <y> <width> <height>   | Specifies a key with a bounding box
+                                       | from x to x+width and y to y+height
+                                       | (inclusive) which can be accessed by
+                                       | <name>.
+---------------------------------------+---------------------------------------
+ id <name> <xid> <yid>                 | Specifies the SDK key IDs for a given
+                                       | key name.
+---------------------------------------+---------------------------------------
+ alias <name> <aliases...>             | Specifies one or more other names a
+                                       | can be referred by.
+---------------------------------------+---------------------------------------
+ // <comment>                          | Ignored by the program.
+---------------------------------------+---------------------------------------
+
+Notes on the import command:
+ - Importing a file inserts its commands into the loaded file.
+ - The size command of an imported file is ignored.
+ - Cyclic imports are resolved by skipping files that are already being loaded

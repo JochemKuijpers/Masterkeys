@@ -1,0 +1,10 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+// In the masterkeys layout, a normal key size is 4 by 4 pixels to accommodate
+// key offsets and length differences of 1/4 normal key size.
+
+size 73 25
+import masterkeys_pro_us_shared_alphanumeric.layout 0 0
+import masterkeys_pro_us_shared_alphanumeric_ids.layout
+import masterkeys_pro_us_shared_multimedia.layout 61 0
+import masterkeys_pro_us_shared_multimedia_ids.layout

@@ -1,0 +1,120 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+
+// Function row
+key ESC 0 0 4 4
+key F1 8 0 4 4
+key F2 12 0 4 4
+key F3 16 0 4 4
+key F4 20 0 4 4
+key F5 26 0 4 4
+key F6 30 0 4 4
+key F7 34 0 4 4
+key F8 38 0 4 4
+key F9 44 0 4 4
+key F10 48 0 4 4
+key F11 52 0 4 4
+key F12 56 0 4 4
+
+// Number row
+key TILDE 0 5 4 4
+key 1 4 5 4 4
+key 2 8 5 4 4
+key 3 12 5 4 4
+key 4 16 4 4 4
+key 5 20 5 4 4
+key 6 24 5 4 4
+key 7 28 5 4 4
+key 8 32 5 4 4
+key 9 36 5 4 4
+key 0 40 5 4 4
+key - 44 5 4 4
+key = 48 5 4 4
+key BACKSPACE 52 5 8 4
+alias TILDE ` ~
+alias 1 ! EXCLAMATION_MARK EXCLAMATIONMARK EXCLAMATION
+alias 2 @ AT
+alias 3 # HASH OCTOTHORP OCTOTHORPE POUND
+alias 4 $ DOLLAR
+alias 5 % PERCENT EURO
+alias 6 ^ CARET
+alias 7 & AND AMPERSAND
+alias 8 * ASTERISK
+alias 9 (
+alias 0 )
+alias - _ MINUS UNDERSCORE
+alias = + EQUALS PLUS
+alias BACKSPACE BACK
+
+// First letters row
+key TAB 0 9 6 4
+key Q 6 9 4 4
+key W 10 9 4 4
+key E 14 9 4 4
+key R 18 9 4 4
+key T 22 9 4 4
+key Y 26 9 4 4
+key U 30 9 4 4
+key I 34 9 4 4
+key O 38 9 4 4
+key P 42 9 4 4
+key [ 46 9 4 4
+key ] 50 9 4 4
+key \ 54 9 6 4
+alias [ {
+alias ] }
+alias \ | BACK_SLASH BACKSLASH PIPE
+
+// Second letters row
+key CAPS_LOCK 0 13 7 4
+key A 7 13 4 4
+key S 11 13 4 4
+key D 15 13 4 4
+key F 19 13 4 4
+key G 23 13 4 4
+key H 27 13 4 4
+key J 31 13 4 4
+key K 35 13 4 4
+key L 39 13 4 4
+key ; 43 13 4 4
+key ' 47 13 4 4
+key ENTER 51 13 9 4
+alias CAPS_LOCK CAPSLOCK CAPSLCK CAPSLK
+alias ; : SEMI_COLON SEMICOLON COLON
+alias ' " SINGLE_QUOTE DOUBLE_QUOTE QUOTE
+
+// Third letters row
+key LEFT_SHIFT 0 17 9 4
+key Z 9 17 4 4
+key X 13 17 4 4
+key C 17 17 4 4
+key V 21 17 4 4
+key B 25 17 4 4
+key N 29 17 4 4
+key M 33 17 4 4
+key , 37 17 4 4
+key . 41 17 4 4
+key / 45 17 4 4
+key RIGHT_SHIFT 49 17 11 4
+alias LEFT_SHIFT LSHIFT
+alias RIGHT_SHIFT RSHIFT
+alias , COMMA
+alias . DOT PERIOD
+alias / SLASH
+
+// Modifiers row
+key LEFT_CTRL 0 21 5 4
+key LEFT_SUPER 5 21 5 4
+key LEFT_ALT 10 21 5 4
+key SPACE 15 21 25 4
+key RIGHT_ALT 40 21 5 4
+key RIGHT_SUPER 45 21 5 4
+key FN 50 21 5 4
+key RIGHT_CTRL 55 21 5 4
+alias LEFT_CTRL LCTRL
+alias LEFT_SUPER LSUPER
+alias LEFT_ALT LALT
+alias SPACE SPACEBAR
+alias RIGHT_ALT RALT
+alias RIGHT_SUPER RSUPER
+alias RIGHT_CTRL RCTRL

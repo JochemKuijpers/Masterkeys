@@ -1,0 +1,46 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+// In the masterkeys layout, a normal key size is 4 by 4 pixels to accommodate
+// key offsets and length differences of 1/4 normal key size.
+
+size 77 25
+import masterkeys_pro_us_shared_alphanumeric.layout 0 0
+import masterkeys_pro_us_shared_numpad.layout 61 5
+
+// Numpad 0, 00
+key NUM_0 61 21 4 4
+key NUM_00 65 21 4 4
+id NUM_0 15 5
+id NUM_00 16 5
+alias NUM_0 NUM_LEFT LEFT_ARROW LEFT
+alias NUM_00 NUM_DOWN DOWN_ARROW DOWN
+
+// Imported numpad aliases
+alias NUM_/ PRINT_SCREEN PRINTSCREEN PRTSCN PRTSC PRINT
+alias NUM_* SCROLL_LOCK SCROLLLOCK SCRLCK SCRLK
+alias NUM_7 NUM_INS INSERT INS
+alias NUM_8 NUM_HOME HOME
+alias NUM_9 NUM_PGUP PAGE_UP PAGEUP PGUP
+alias NUM_4 NUM_DEL DELETE DEL
+alias NUM_5 NUM_END END
+alias NUM_6 NUM_PGDN PAGE_DOWN PAGEDOWN PGDN
+alias NUM_2 NUM_UP UP_ARROW UP
+alias NUM_. NUM_RIGHT RIGHT_ARROW RIGHT
+
+// Numpad IDs
+id NUM_LOCK 15 1
+id NUM_/ 16 1
+id NUM_* 17 1
+id NUM_- 18 1
+id NUM_7 15 2
+id NUM_8 16 2
+id NUM_9 17 2
+id NUM_+ 18 2
+id NUM_4 15 3
+id NUM_5 16 3
+id NUM_6 17 3
+id NUM_1 15 4
+id NUM_2 16 4
+id NUM_3 17 4
+id NUM_ENTER 19 4
+id NUM_. 17 5

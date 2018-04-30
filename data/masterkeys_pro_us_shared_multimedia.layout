@@ -1,0 +1,39 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+
+// Row 0
+key PRINT_SCREEN 0 0 4 4
+key SCROLL_LOCK 4 0 4 4
+key PAUSE 8 0 4 4
+alias PRINT_SCREEN PRINTSCREEN PRTSCN PRTSC PRINT
+alias SCROLL_LOCK SCROLLLOCK SCRLCK SCRLK
+alias PAUSE BREAK
+
+// Row 1
+key INSERT 0 5 4 4
+key HOME 4 5 4 4
+key PAGE_UP 8 5 4 4
+alias INSERT INS
+alias PAGE_UP PAGEUP PGUP
+
+// Row 2
+key DELETE 0 9 4 4
+key END 4 9 4 4
+key PAGE_DOWN 8 5 4 4
+alias DELETE DEL
+alias PAGE_DOWN PAGEDOWN PGDN
+
+// Row 3
+// N/A
+
+// Row 4
+key UP_ARROW 4 17 4 4
+alias UP_ARROW UP
+
+// Row 5
+key LEFT_ARROW 0 21 4 4
+key DOWN_ARROW 4 21 4 4
+key RIGHT_ARROW 8 21 4 4
+alias LEFT_ARROW LEFT
+alias DOWN_ARROW DOWN
+alias RIGHT_ARROW RIGHT

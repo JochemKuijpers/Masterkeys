@@ -1,0 +1,38 @@
+// see docs/keyboard_layout.xlsx for a visual aid of the masterkeys layouts.
+// see docs/layout.txt for a guide of this file format.
+
+// Row 1
+key NUM_LOCK 0 0 4 4
+key NUM_/ 4 0 4 4
+key NUM_* 8 0 4 4
+key NUM_- 12 0 4 4
+alias NUM_LOCK NUMERIC_LOCK NUMERICLOCK NUMLOCK NUMLCK NUMLK
+alias NUM_/ NUM_DIVIDE NUM_SLASH
+alias NUM_* NUM_TIMES NUM_MULTIPLY NUM_MULT NUM_ASTERISK
+alias NUM_- NUM_MINUS NUM_DASH
+
+// Row 2
+key NUM_7 0 4 4 4
+key NUM_8 4 4 4 4
+key NUM_9 8 4 4 4
+
+// Row 2-3
+key NUM_+ 12 4 4 8
+alias NUM_+ NUM_PLUS
+
+// Row 3
+key NUM_4 0 8 4 4
+key NUM_5 4 8 4 4
+key NUM_6 8 8 4 4
+
+// Row 4
+key NUM_1 0 12 4 4
+key NUM_2 4 12 4 4
+key NUM_3 8 12 4 4
+
+// Row 4-5
+key NUM_ENTER 12 12 4 8
+
+// Row 5
+key NUM_. 8 16 4 4
+alias NUM_. NUM_DOT NUM_PERIOD
