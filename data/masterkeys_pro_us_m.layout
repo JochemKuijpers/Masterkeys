@@ -5,7 +5,9 @@
 
 size 77 25
 import masterkeys_pro_us_shared_alphanumeric.layout 0 0
+import masterkeys_pro_us_shared_alphanumeric_ids.layout
 import masterkeys_pro_us_shared_numpad.layout 61 5
+import masterkeys_pro_us_shared_multimedia_ids.layout
 
 // Numpad 0, 00
 key NUM_0 61 21 4 4
