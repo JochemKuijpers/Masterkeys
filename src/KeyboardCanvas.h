@@ -28,7 +28,7 @@ public:
     void add(int x, int y, uint32_t color);
     void add(Shape<int> &shape, uint32_t color);
     void subtract(int x, int y, uint32_t color);
-    void subtract(Shape<int> shape, uint32_t color);
+    void subtract(Shape<int> &shape, uint32_t color);
 
     void clear();
 

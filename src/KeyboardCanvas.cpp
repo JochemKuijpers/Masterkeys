@@ -96,7 +96,7 @@ void KeyboardCanvas::subtract(int x, int y, uint32_t color) {
     canvas[y * width + x] = color::subtract(canvas[y * width + x], color);
 }
 
-void KeyboardCanvas::subtract(Shape<int> shape, uint32_t color) {
+void KeyboardCanvas::subtract(Shape<int> &shape, uint32_t color) {
     for (int x = std::min(0, shape.bound().x1);
          x < std::max((int) width - 1, shape.bound().x2); ++x) {
         for (int y = std::min(0, shape.bound().y1);

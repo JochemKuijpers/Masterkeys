@@ -21,7 +21,7 @@ MESSAGE(STATUS "MasterKeys SDK lib: " ${MASTERKEYS_SDK})
 
 include_directories(${MASTERKEYS_SDK_DIR})
 
-add_executable(masterkeys src/main.cpp src/KeyboardLayout.cpp src/KeyboardLayout.h src/KeyData.h src/KeyboardCanvas.cpp src/KeyboardCanvas.h src/utils/ColorUtils.h src/utils/StringUtils.h src/utils/Utils.h src/KeyboardLoader.cpp src/KeyboardLoader.h src/sdk/MasterkeysSdk.cpp src/sdk/MasterkeysSdk.h src/utils/Geometry.h src/effects/KeyboardEffect.h src/KeyboardManager.cpp src/KeyboardManager.h src/effects/RainDropsKeyboardEffect.h src/effects/LockKeysKeyboardEffect.h src/effects/SolidBackgroundKeyboardEffect.h src/effects/CrosshairKeyboardEffect.h)
+add_executable(masterkeys src/main.cpp src/KeyboardLayout.cpp src/KeyboardLayout.h src/KeyData.h src/KeyboardCanvas.cpp src/KeyboardCanvas.h src/utils/ColorUtils.h src/utils/StringUtils.h src/utils/Utils.h src/KeyboardLoader.cpp src/KeyboardLoader.h src/sdk/MasterkeysSdk.cpp src/sdk/MasterkeysSdk.h src/utils/Geometry.h src/effects/KeyboardEffect.h src/KeyboardManager.cpp src/KeyboardManager.h src/effects/RainDropsKeyboardEffect.h src/effects/LockKeysKeyboardEffect.h src/effects/SolidBackgroundKeyboardEffect.h src/effects/CrosshairKeyboardEffect.h src/effects/WaveSimulationKeyboardEffect.h)
 
 target_link_libraries(masterkeys ${MASTERKEYS_SDK})
 
