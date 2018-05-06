@@ -27,6 +27,7 @@ namespace color {
     }
 
     inline uint32_t blend(const uint32_t color1, const uint32_t color2, float blend) {
+        blend = clamp<float>(0.0f, blend, 1.0f);
         return rgb(
                 static_cast<const uint8_t>(  red(color1) * (1 - blend) +   red(color2) * blend),
                 static_cast<const uint8_t>(green(color1) * (1 - blend) + green(color2) * blend),
