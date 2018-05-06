@@ -12,7 +12,8 @@ private:
     int brgt;
     uint32_t color;
 public:
-    SolidBackgroundAdjustKeyboardEffect() : fnPressed(false), brgt(100), color(color::rgb(brgt, brgt, brgt)) {}
+    SolidBackgroundAdjustKeyboardEffect() :
+            fnPressed(false), f2pressed(false), f3pressed(false), brgt(100), color(color::rgb(brgt, brgt, brgt)) {}
 
     void onKey(KeyData *pKeyData, KeyboardLayout *pLayout, KeyboardCanvas *pCanvas, bool pressed) override {
         if (pKeyData == pLayout->getKey("FN")) { fnPressed = pressed; }
