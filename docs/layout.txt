@@ -31,6 +31,7 @@ its parameters.
 Notes on the import command:
  - Importing a file acts as if the imported commands are inserted into the
    loaded file.
- - The size command of imported files is ignored
+ - Any size command after the first one (including in imported files) is
+   ignored.
  - Cyclic imports are allowed but will be ignored. Sequential imports are not
    ignored and may cause errors.
