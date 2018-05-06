@@ -7,6 +7,7 @@
 #include "effects/RainDropsKeyboardEffect.h"
 #include "effects/LockKeysKeyboardEffect.h"
 #include "effects/SolidBackgroundKeyboardEffect.h"
+#include "effects/SolidBackgroundAdjustKeyboardEffect.h"
 #include "effects/CrosshairKeyboardEffect.h"
 #include "effects/WaveSimulationKeyboardEffect.h"
 
@@ -21,7 +22,9 @@ bool consoleEventHandler(DWORD event);
 // note: the white LED keyboards only use the RED channel for color.
 void configureEffects(KeyboardManager &manager) {
     // draws a specified background color every frame
-    manager.addEffect(new SolidBackgroundKeyboardEffect(color::rgb(64, 64, 64)));
+    //manager.addEffect(new SolidBackgroundKeyboardEffect(color::rgb(64, 64, 64)));
+	
+	manager.addEffect(new SolidBackgroundAdjustKeyboardEffect());
 
     // sets capslock, numlock and scroll lock lights enabled or disabled based on the lock state
     // scroll lock can be inverted by double-pressing it because I use it as a microphone mute indicator
@@ -35,7 +38,7 @@ void configureEffects(KeyboardManager &manager) {
 //    manager.addEffect(new RainDropsKeyboardEffect(0.75f, 2));
 
     // every keypress triggers a new wave of light on the keyboard
-    manager.addEffect(new WaveSimulationKeyboardEffect());
+    //manager.addEffect(new WaveSimulationKeyboardEffect());
 }
 
 // code below does not need to be touched..
