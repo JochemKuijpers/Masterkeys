@@ -1,3 +1,5 @@
+#define NOMINMAX // prevents windows.h from defining min() and max() macros
+
 #include <iostream>
 #include <chrono>
 #include <windows.h>
