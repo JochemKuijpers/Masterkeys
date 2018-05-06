@@ -69,6 +69,11 @@ void KeyboardLoader::parseSize(std::vector<std::string>& tokens, KeyboardLayout 
         throw std::runtime_error(ss.str());
     }
 
+    if (pLayout->hasSize()) {
+        // ignore any but the first size command
+        return;
+    }
+
     pLayout->setSize(
             clamp<uint8_t>(0, std::stoi(tokens[1]), 255),
             clamp<uint8_t>(0, std::stoi(tokens[2]), 255)

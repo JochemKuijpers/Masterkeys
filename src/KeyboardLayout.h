@@ -38,6 +38,8 @@ public:
     KeyData *findKey(int row, int column);
 
     void getKeys(std::vector<KeyData*> &keys);
+
+    bool hasSize();
 };
 
 

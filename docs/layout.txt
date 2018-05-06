@@ -10,25 +10,27 @@ its parameters.
                                        | commands.
 ---------------------------------------+---------------------------------------
  import <filename> <xoffset> <yoffset> | Loads another layout into this
-                                       | keyboard mapping, with a specified
-                                       | offset applied to the imported layout.
+                                       | keyboard layout, with an optional
+                                       | offset applied to the imported keys.
                                        | <xoffset>, <yoffset> are optional.
 ---------------------------------------+---------------------------------------
  key <name> <x> <y> <width> <height>   | Specifies a key with a bounding box
                                        | from x to x+width and y to y+height
-                                       | (inclusive) which can be accessed by
-                                       | <name>.
+                                       | which can be accessed by <name>.
 ---------------------------------------+---------------------------------------
  id <name> <xid> <yid>                 | Specifies the SDK key IDs for a given
-                                       | key name.
+                                       | key name. See CoolerMaster Masterkeys
+                                       | SDK docs for these values.
 ---------------------------------------+---------------------------------------
- alias <name> <aliases...>             | Specifies one or more other names a
-                                       | can be referred by.
+ alias <name> <aliases...>             | Specifies one or more alias names a
+                                       | key can be referred by.
 ---------------------------------------+---------------------------------------
  // <comment>                          | Ignored by the program.
 ---------------------------------------+---------------------------------------
 
 Notes on the import command:
- - Importing a file inserts its commands into the loaded file.
- - The size command of an imported file is ignored.
- - Cyclic imports are resolved by skipping files that are already being loaded
+ - Importing a file acts as if the imported commands are inserted into the
+   loaded file.
+ - The size command of imported files is ignored
+ - Cyclic imports are allowed but will be ignored. Sequential imports are not
+   ignored and may cause errors.

@@ -59,3 +59,7 @@ void KeyboardLayout::getKeys(std::vector<KeyData *> &keys) {
     }
 }
 
+bool KeyboardLayout::hasSize() {
+    return width != 0 || height != 0;
+}
+
